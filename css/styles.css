@@ -107,6 +107,7 @@ a {
 
 
 /* SITE-HEADER */
+/* TODO white-space nowrap */
 .site-header__top {
   display: flex;
   justify-content: space-between;
@@ -188,6 +189,115 @@ a {
 
 .site-header__top-nav-link:active {
   opacity: 0.6;
+}
+
+/* SITE-HEADER-MIDDLE */
+.site-header__middle {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.site-header__logo {
+  width: 177px;
+  height: 50px;
+  margin-right: 158px;
+}
+
+.logo__img {
+  display: block;
+}
+
+/* SEARCH-FORM */
+.search-form {
+  display: flex;
+  width: 500px;
+  padding: 11px 16px;
+  border: 1px solid #d1d1d1;
+  margin-right: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--body-bg);
+  background-image: url("../img/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.search-form__select-wrapper {
+  padding-right: 24px;
+  border-right: 1px solid #d1d1d1;
+  margin-right: 24px;
+}
+
+.search-form__select {
+  width: 130px;
+  border: none;
+  margin-right: 24px;
+  background-color: transparent;
+  font-size: 15px;
+  line-height: 22px;
+  font-family: var(--heading-font-stack);
+  font-weight: bold;
+}
+
+.search-form__input {
+  width: 240px;
+  border: none;
+  background-color: transparent;
+  outline-offset: 3px;
+}
+
+/* SITE-HEADER-ACTIONS */
+.site-header__user-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.site-header__action-link {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  color: var(--text-color);
+}
+
+.site-header__action-link:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-header__action-link:hover {
+  color: var(--link-color);
+}
+
+.site-header__action-link:active {
+  opacity: 0.6;
+}
+
+.site-header__action-icon {
+  display: block;
+}
+
+.site-header__cart-content-count {
+  position: absolute;
+  z-index: 1;
+  right: 60%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 12px;
+  background-color: #e5704b;
+  font-size: 12px;
+  line-height: 18px;
+  color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 
